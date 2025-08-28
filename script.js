@@ -51,7 +51,7 @@ for (let i = 0; i < callingBtn.length; i++) {
       return;
     }
 
-    alert(`📞 Clling ${serviceName} ${numbers}`);
+    alert(`📞 Calling ${serviceName} ${numbers}`);
 
     coinCount -= 20;
     document.getElementById("coin-count").innerText = coinCount;

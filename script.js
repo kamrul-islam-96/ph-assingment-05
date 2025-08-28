@@ -38,6 +38,7 @@ let coinCount = parseInt(document.getElementById("coin-count").innerText);
 const hotlineNumber = document.getElementsByClassName("number");
 const callingBtn = document.getElementsByClassName("calling-btn");
 const title = document.getElementsByClassName("service-title");
+const clearBtn = document.getElementById("clear-btn");
 
 for (let i = 0; i < callingBtn.length; i++) {
   const btn = callingBtn[i];
@@ -45,15 +46,40 @@ for (let i = 0; i < callingBtn.length; i++) {
   const numbers = hotlineNumber[i].innerText;
 
   btn.addEventListener("click", function () {
-    
-    if(coinCount < 20) {
-      alert('You have not enough coin to calling')
-      return
+    if (coinCount < 20) {
+      alert("❌ You don't have enough coins to make a call!");
+      return;
     }
-    
-    alert(`${serviceName} ${numbers}`);
+
+    alert(`📞 Clling ${serviceName} ${numbers}`);
 
     coinCount -= 20;
     document.getElementById("coin-count").innerText = coinCount;
+
+    // call history
+    const callTime = new Date().toLocaleTimeString("en-US", {
+      timeZone: "Asia/Dhaka",
+    });
+    const parentCardContent = document.getElementById("parent-card");
+    const cardContent = document.createElement("div");
+    cardContent.classList =
+      "max-w-md mx-auto mt-2 bg-gray-100 rounded-xl p-4 flex items-center justify-between shadow-sm";
+    cardContent.innerHTML = `
+      <div>
+        <h2 class="font-semibold text-[18px]">${serviceName}</h2>
+        <p class="text-gray-700 text-sm font-semibold">${numbers}</p>
+      </div>
+
+      <span class="text-gray-600 text-base">${callTime}</span>
+    `;
+
+    parentCardContent.appendChild(cardContent);
   });
 }
+
+// card remove
+clearBtn.addEventListener("click", function () {
+  const card = document.getElementById("parent-card");
+
+  card.innerHTML = "";
+});

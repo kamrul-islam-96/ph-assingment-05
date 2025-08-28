@@ -16,56 +16,9 @@
     />
   </head>
   <body>
-    <!-- <header>
-      <nav
-        class="flex items-center justify-between w-full md:max-w-[1280px] mx-auto px-10 py-6"
-      >
-        <div class="flex items-center gap-x-3">
-          <img src="./assets/logo.png" alt="logo" class="w-[50px]" />
-
-          <h1 class="text-[#006747] text-[18px] font-extrabold">
-            Emergency <br />
-            Service
-          </h1>
-        </div>
-
-        <div class="flex items-center gap-5">
-          <div
-            class="flex items-center justify-center w-[122px] h-[52px] rounded-4xl bg-green-100 gap-x-3"
-          >
-            <span id="heart-count" class="font-bold">100</span>
-
-            <img src="./assets/heart.png" alt="heart" class="w-[30px]" />
-          </div>
-
-          <div
-            class="flex items-center justify-center w-[122px] h-[52px] rounded-4xl bg-green-100 gap-x-3"
-          >
-            <span id="coin-count" class="font-bold">100</span>
-
-            <img src="./assets/coin.png" alt="coin" class="w-[30px]" />
-          </div>
-
-          <div
-            class="flex items-center justify-center w-[122px] h-[52px] rounded-4xl bg-[#00A63E] gap-x-3"
-          >
-            <h1 class="font-bold text-white">
-              <span id="copy-count">0</span> Copy
-            </h1>
-          </div>
-        </div>
-      </nav>
-
-      <section class="py-6 bg-green-800 flex flex-col items-center justify-center gap-[10px] ">
-        <img src="./assets/logo-dark.png" alt="hero-section-logo" class="w-[100px]" />
-        <h1 class="text-[40px] font-bold text-white">Emergency Service Directory</h1>
-        <p class="text-[20px] font-semibold text-white">
-          Government Emergency Services at Your Fingertip - A Project by
-          Government of the People's Republic of Bangladesh
-        </p>
-      </section>
-    </header> -->
+    <!-- header -->
     <header>
+      <!-- navbar -->
       <nav
         class="flex flex-wrap md:flex-nowrap items-center justify-between w-full md:max-w-[1440px] mx-auto px-4 md:px-8 py-4 md:py-6 gap-4"
       >
@@ -86,27 +39,27 @@
           <div
             class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3 rounded-full bg-green-100 gap-x-2"
           >
-            <span id="heart-count" class="font-bold text-sm md:text-base"
+            <span id="heart-count" class="font-bold text-sm md:text-base inline-block text-center min-w-[24px]"
               >0</span
             >
-            <img src="./assets/heart.png" alt="heart" class="w-6 md:w-8" />
+            <img src="./assets/heart.png" alt="heart" class="w-6 md:w-7" />
           </div>
 
           <!-- Coin -->
           <div
             class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3 rounded-full bg-green-100 gap-x-2"
           >
-            <span id="coin-count" class="font-bold text-sm md:text-base"
+            <span id="coin-count" class="font-bold text-sm md:text-base inline-block text-center min-w-[24px] "
               >100</span
             >
-            <img src="./assets/coin.png" alt="coin" class="w-6 md:w-8" />
+            <img src="./assets/coin.png" alt="coin" class="w-6 md:w-7" />
           </div>
 
           <!-- Copy -->
           <div
-            class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3 rounded-full bg-[#00A63E] gap-x-2"
+            class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3.5 rounded-full bg-[#00A63E] gap-x-2"
           >
-            <h1 class="font-bold text-white text-sm md:text-base">
+            <h1 class="font-bold text-white text-sm md:text-base inline-block text-center min-w-[24px]">
               <span id="copy-count">0</span> Copy
             </h1>
           </div>
@@ -146,7 +99,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -163,7 +118,7 @@
 
             <div class="flex items-center justify-between">
               <button
-                class="w-[48%] py-2 border-2 border-gray-300 rounded-xl cursor-pointer copy-btn hover:bg-gray-500 hover:text-white "
+                class="w-[48%] py-2 border-2 border-gray-300 rounded-xl cursor-pointer copy-btn hover:bg-gray-500 hover:text-white"
               >
                 <i class="fa-regular fa-copy"></i>
                 Copy
@@ -182,7 +137,9 @@
               <div class="w-[50px] p-3 bg-[#DFEFFF] rounded-2xl">
                 <img src="./assets/police.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -218,7 +175,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/fire-service.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -254,7 +213,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/ambulance.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -263,7 +224,9 @@
             <p class="text-gray-500">Ambulance</p>
 
             <div class="my-4">
-              <span class="text-2xl font-bold block mb-2 number">1994-999999</span>
+              <span class="text-2xl font-bold block mb-2 number"
+                >1994-999999</span
+              >
               <div class="px-4 py-2 bg-gray-300 inline-block rounded-3xl">
                 Health
               </div>
@@ -290,7 +253,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -326,7 +291,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -362,7 +329,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -398,7 +367,9 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/brac.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
@@ -434,11 +405,13 @@
               <div class="w-[50px] p-3 bg-[#FFE3E2] rounded-2xl">
                 <img src="./assets/Bangladesh-Railway.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+              <i
+                class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+              ></i>
             </div>
 
             <h1 class="text-[18px] font-bold mt-4 service-title">
-              Bangladesh Railway Helpline 
+              Bangladesh Railway Helpline
             </h1>
             <p class="text-gray-500">Bangladesh Railway</p>
 
@@ -474,23 +447,14 @@
               <p class="font-bold">Call History</p>
             </div>
             <button
+              id="clear-btn"
               class="flex items-center justify-center px-3 md:px-6 py-2 md:py-[10px] rounded-full bg-[#00A63E] gap-x-2 text-white font-semibold cursor-pointer"
             >
               Clear
             </button>
           </div>
 
-          <div class="mt-4">
-            <div
-              class="max-w-md mx-auto mt-2 bg-gray-100 rounded-xl p-4 flex items-center justify-between shadow-sm"
-            >
-              <div>
-                <h2 class="font-semibold text-[18px]">Fire Service Number</h2>
-                <p class="text-gray-700 text-sm">999</p>
-              </div>
-              <span class="text-gray-600 text-base">11:36:58 AM</span>
-            </div>
-          </div>
+          <div id="parent-card" class="mt-4"></div>
         </div>
       </section>
     </main>

@@ -16,6 +16,6 @@ Event Bubbling means when an event occurs on an element, it bubbles up. For exam
 Event Delegation
 Event Delegation means attaching a single event listener to a parent element instead of adding listeners to multiple child elements.
 
-##4
+##5
 Event Methods
 event.preventDefault() is using for changing forms default behaveior. if you click on submit button then page will auto realoading, for stop this action we use event.preventDefault(). event.stopPropagation() Stops the event from bubbling up to parent elements.
